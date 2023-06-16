@@ -47,3 +47,44 @@
   line-height: 1;
   top: -34px;
 }
+
+.Weather input:focus {
+  border-color: #885DF1;
+}
+
+.Weather input {
+  background: #F7F3FF;
+  border: 1px solid #885DF1;
+}
+
+.Weather .btn {
+  background: #885DF1;
+  border: none;
+}
+
+
+@media (max-width: 900px) {
+
+  .Weather .temperature {
+    font-size: 33px;
+  }
+
+  .Weather h1 {
+    color: #885DF1;
+    font-size: 22px;
+  }
+
+  .Weather li {
+    font-size: 13px;
+  }
+  .Weather canvas { 
+max-height: 40px;
+max-width: 40px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 9px !important;
+  }
+
+}

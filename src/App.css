@@ -1,10 +1,20 @@
+body {
+  background: #F7F3FF;
+}
+
 .App {
   max-width: 600px;
   margin: 30px auto;
 }
+
+.App .Weather {
+    border: 2px solid #885DF1;
+}
+
 
 .App footer {
   font-size: 11px;
   margin: 10px 0;
   text-align: center;
 }
+

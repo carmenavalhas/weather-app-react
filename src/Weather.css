@@ -7,6 +7,7 @@
 }
 
 .Weather h1 {
+      color: #885DF1;
   font-size: 24px;
   font-weight: 100;
   margin: 20px 0 0 0;
@@ -77,9 +78,13 @@
   .Weather li {
     font-size: 13px;
   }
+
+  .Weather .btn {
+    font-size: 11px;
+  }
   .Weather canvas { 
-max-height: 40px;
-max-width: 40px;
+  max-height: 40px;
+  max-width: 40px;
   }
 
   footer {

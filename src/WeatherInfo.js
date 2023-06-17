@@ -6,31 +6,32 @@ import WeatherTemperature from "./WeatherTemperature";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1>{props.data.city}</h1>
+      <h1 className="d-flex justify-content-center mt-5">{props.data.city}</h1>
       <ul>
-        <li>
+        <li className="d-flex justify-content-center">
           <FormattedDate date={props.data.date} />
         </li>
-        <li className="text-capitalize">{props.data.description}</li>
+        <li className="description d-flex justify-content-center mb-5">{props.data.description}</li>
       </ul>
-      <div className="row mt-3">
-        <div className="col-6">
-          <div className="d-flex">
+      <div className="info d-flex justify-content-center">
+        <div className="row mt-2 d-flex justify-content-center">
+        <div className="col-12 d-flex justify-content-center">
             <div>
-              <WeatherIcon code={props.data.icon} size={36} />
+              <WeatherIcon code={props.data.icon} size={40} />
             </div>
 
             <div>
               <WeatherTemperature celsius={props.data.temperature} />
             </div>
-          </div>
+          
         </div>
-        <div className="col-6">
+        <div className="weather-states col-6 mb-3">
           <ul>
-            <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind: {Math.round(props.data.wind)} km/h</li>
-            <li>Real feel: {Math.round(props.data.feelslike)}ºC</li>
+            <li className="humidity">Humidity: {props.data.humidity}%</li>
+            <li className="wind">Wind: {Math.round(props.data.wind)} km/h</li>
+            <li className="real-feel">Real feel: {Math.round(props.data.feelslike)}ºC</li>
           </ul>
+        </div>
         </div>
       </div>
     </div>

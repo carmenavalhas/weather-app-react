@@ -34,6 +34,7 @@
   margin-left: 5px;
   font-weight: 400;
   margin-left: 10px;
+  color: #885DF1;
 }
 
 .Weather canvas {
@@ -41,12 +42,18 @@
 }
 
 .Weather .unit {
-  color: rgb(33, 33, 33);
+  color: rgba(136, 93, 241, 0.6);
+;
   font-size: 16px;
   font-weight: 400;
   position: relative;
   line-height: 1;
   top: -34px;
+}
+
+.Weather .unit a {
+    text-decoration: none;
+    color: rgba(136, 93, 241);
 }
 
 .Weather input:focus {

@@ -7,6 +7,9 @@ export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
+// if the coordinates change
+// set loaded false
+
   useEffect(() => {
     setLoaded(false);
   }, [props.coordinates]);

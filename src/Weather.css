@@ -3,16 +3,15 @@
 
 .Weather {
   font-family: 'Jost', sans-serif;
-  background: #FBFBFB;
-  border: 1px solid white !important;
-  padding: 16px;
+  background: #EAE0D3;
+  padding: 20px 20px 0 20px;
   border-radius: 10px;
   color: rgb(135, 135, 135);
-  box-shadow: 1px 5px 16px 2px rgba(136, 93, 241, 0.2);
- }
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); 
+}
 
 .Weather h1 {
-  color: #885DF1;
+  color: #D99F5A;
   letter-spacing: 1px;
   font-size: 30px;
   font-weight: 600;
@@ -21,14 +20,15 @@
 }
 
 .Weather .description {
-  color: #885DF1;
+  color: #8FA493;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 12px;
 }
 
 .weather-states {
- color: rgba(136, 93, 241, 0.7);
+ color: rgba(132, 155, 135, 0.7);
 }
 
 .Weather ul {
@@ -52,7 +52,7 @@
   font-size: 40px;
   line-height: 60px;
   margin-left: 10px;
-  color: #885DF1;
+  color: #D99F5A;
 }
 
 .Weather canvas {
@@ -60,16 +60,16 @@
 }
 
 .Weather .unit {
-  color: rgba(136, 93, 241);
+  color: #D99F5A;
   font-size: 13.5px;
   font-weight: 400;
   position: relative;
   line-height: 1;
-  top: -30px;
+  top: -25px;
 }
 
 .Weather .unit a {
-    color: rgba(136, 93, 241, 0.6);
+    color: rgba(217, 159, 90, 0.7);
     text-decoration: none;
 }
 
@@ -92,18 +92,20 @@
 }
 
 .Weather input:focus {
-  border-color: #885DF1;
+  border-color: #C7A47E;
 }
 
 .Weather input {
-  background: #F7F3FF;
-  border: 1px solid #885DF1;
+  background: rgba(132, 155, 135, 0.1);
+  border: 1.5px solid #8FA493;
   border-radius: 8px;
 }
 
 .Weather .btn {
-  background: #885DF1;
+  background: #8FA493;
+  max-height: 30px;
   border-radius: 10px;
+  border: none;
 }
 
  .canvas {
@@ -118,7 +120,6 @@
   }
 
   .Weather h1 {
-    color: #885DF1;
     font-size: 25px;
   }
 

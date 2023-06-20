@@ -30,5 +30,5 @@ export default function WeatherIcon(props) {
   return <FontAwesomeIcon 
   icon={codeMapping[props.code]}  
   size="2xl" 
-  style={{color: "#b04fad"}} /> ;
+  style={{color: "#D99F5A"}} /> ;
 }

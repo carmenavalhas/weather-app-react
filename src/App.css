@@ -18,3 +18,24 @@ body {
   text-align: center;
 }
 
+.App footer a {
+  color: rgba(26, 26, 25, 0.6);
+  text-decoration: none;
+}
+
+.App footer a:hover {
+  color: #885DF1;
+}
+
+.App .footer-icon {
+  color: #212529;
+}
+
+@media (max-width: 900px) {
+  
+  .App footer {
+      text-align: center;
+      font-size: 10px !important;
+    }
+}
+

@@ -2,6 +2,9 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTemperatureThreeQuarters, faWind, faFaceSmileBeam } from '@fortawesome/free-solid-svg-icons'
+
 
 export default function WeatherInfo(props) {
   return (
@@ -17,7 +20,9 @@ export default function WeatherInfo(props) {
         <div className="row mt-2 d-flex justify-content-center">
         <div className="col-12 d-flex justify-content-center">
             <div>
-              <WeatherIcon code={props.data.icon} size={40} />
+              <span className="canvas">
+              <WeatherIcon code={props.data.icon}/> 
+              </span>
             </div>
 
             <div>
@@ -25,11 +30,14 @@ export default function WeatherInfo(props) {
             </div>
           
         </div>
-        <div className="weather-states col-6 mb-3">
+        <div className="weather-states col-8 mb-3 d-flex justify-content-center">
           <ul>
-            <li className="humidity">Humidity: {props.data.humidity}%</li>
-            <li className="wind">Wind: {Math.round(props.data.wind)} km/h</li>
-            <li className="real-feel">Real feel: {Math.round(props.data.feelslike)}ºC</li>
+            <li className="humidity">
+              <FontAwesomeIcon icon={faTemperatureThreeQuarters} />{" "}Humidity: {props.data.humidity}%</li>
+            <li className="wind">
+            <FontAwesomeIcon icon={faWind} />{" "}Wind: {Math.round(props.data.wind)} km/h</li>
+            <li className="real-feel">
+            <FontAwesomeIcon icon={faFaceSmileBeam} />{" "}Real feel: {Math.round(props.data.feelslike)}ºC</li>
           </ul>
         </div>
         </div>

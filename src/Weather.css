@@ -106,6 +106,10 @@
   border-radius: 10px;
 }
 
+ .canvas {
+   font-size: 20px;
+ }
+
 
 @media (max-width: 900px) {
 
@@ -127,14 +131,5 @@
     font-size: 12px;
   }
 
-  .Weather canvas { 
-  max-height: 40px;
-  max-width: 40px;
-  }
-
-  footer {
-    text-align: center;
-    font-size: 10px !important;
-  }
 
 }

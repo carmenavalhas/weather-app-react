@@ -1,34 +1,34 @@
 import React from "react";
-import ReactAnimatedWeather from "react-animated-weather";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun, faCloud, faCloudMoon, faCloudSun, faCloudRain, faCloudBolt, faSnowflake, faWater } 
+from '@fortawesome/free-solid-svg-icons'
+
+library.add(faSun, faCloud, faCloudMoon, faCloudSun, faCloudRain, faSnowflake, faWater, faCloudBolt)
 
 export default function WeatherIcon(props) {
   const codeMapping = {
-    "01d": "CLEAR_DAY",
-    "01n": "CLEAR_NIGHT",
-    "02d": "PARTLY_CLOUDY_DAY",
-    "02n": "PARTLY_CLOUDY_NIGHT",
-    "03d": "PARTLY_CLOUDY_DAY",
-    "03n": "PARTLY_CLOUDY_NIGHT",
-    "04d": "CLOUDY",
-    "04n": "CLOUDY",
-    "09d": "RAIN",
-    "09n": "RAIN",
-    "10d": "RAIN",
-    "10n": "RAIN",
-    "11d": "RAIN",
-    "11n": "RAIN",
-    "13d": "SNOW",
-    "13n": "SNOW",
-    "50d": "FOG",
-    "50n": "FOG",
+    "01d": faSun,
+    "01n": faCloudMoon,
+    "02d": faCloudSun,
+    "02n": faCloudSun,
+    "03d": faCloudSun,
+    "03n": faCloudMoon,
+    "04d": faCloud,
+    "04n": faCloud,
+    "09d": faCloudRain,
+    "09n": faCloudRain,
+    "10d": faCloudRain,
+    "10n": faCloudRain,
+    "11d": faCloudBolt,
+    "11n": faCloudRain,
+    "13d": faSnowflake,
+    "13n": faSnowflake,
+    "50d": faWater,
+    "50n": faWater,
   };
-
-  return (
-    <ReactAnimatedWeather
-      icon={codeMapping[props.code]}
-      color="#885DF1"
-      size={props.size}
-      animate={true}
-    />
-  );
+  return <FontAwesomeIcon 
+  icon={codeMapping[props.code]}  
+  size="2xl" 
+  style={{color: "#b04fad"}} /> ;
 }

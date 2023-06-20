@@ -108,8 +108,7 @@ form {
 
 .Weather .btn {
   background: #8FA493;
-  max-height: 30px;
-  border-radius: 10px;
+  border-radius: 50px;
   border: none;
 }
 
@@ -135,6 +134,7 @@ form {
 
   .Weather .btn {
     font-size: 12px;
+    text-align: center;
   }
 
 

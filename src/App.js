@@ -8,7 +8,7 @@ export default function App() {
   return (
   <div className="App">
     <div className="container">
-     <Weather defaultCity="New York" />
+     <Weather defaultCity="Copacabana" />
     <footer>
       2023, React ⎪  <a href="https://github.com/carmenavalhas/weather-app-react"
     target="_blank" rel="noopener noreferrer"> <span className='footer-icon'> 

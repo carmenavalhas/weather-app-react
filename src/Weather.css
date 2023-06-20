@@ -28,7 +28,7 @@
 }
 
 .weather-states {
- color: rgba(132, 155, 135, 0.7);
+ color: rgba(132, 155, 135, 0.8);
 }
 
 .Weather ul {
@@ -77,6 +77,11 @@
   font-size: 11px !important;
   font-weight: 600;
   letter-spacing: 0.3px;
+}
+
+
+form {
+  margin-top: 20px;
 }
 
 .humidity {
